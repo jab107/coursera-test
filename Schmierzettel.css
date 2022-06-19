@@ -1,0 +1,75 @@
+body {
+    font-size: 16px;
+    color: black;
+    font-family: 'Itim', cursive;
+}
+
+/* HEADER */
+#header-nav {
+    background-color:  #c1c1c1;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+    padding: 5px 0 10px;
+}
+.navbar-brand h1 {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+/** MENU BUTTON **/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid black;
+}
+.navbar-header button.navbar-toggle {
+    clear:both;
+    margin-top: -35px;
+    /** T-FIX FOR BOTTOM SPACE OF BUTTON margin-bottom: 15px; **/
+}
+/* END OF HEADER */
+
+/* HOME PAGE */
+#chicken, #beef, #sushi {
+    background-color: #c1c1c1;
+}
+/* END OF HOME PAGE */
+
+
+/***************** MEDIUM DEVICES ONLY *****************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+
+     /* End Header */
+ 
+     /* Home Page */
+
+     /* End Home Page */
+ 
+ }
+ 
+ /***************** SMALL DEVICES ONLY *****************/
+ @media (min-width: 768px) and (max-width: 991px) {
+      /* Home Page */
+
+     /* End Home Page */
+ }
+ 
+ /***************** XTRA SMALL DEVICES ONLY *****************/
+ @media (max-width: 767px) {
+     /* Header */
+
+     #collapsable-nav a { /* Collapsed nav menu glyph */
+         font-size: 1.2em;
+     }
+     #collapsable-nav a span {
+         font-size: 1em;
+         margin-right: 5px;
+     }
+     /* End Header */
+    }

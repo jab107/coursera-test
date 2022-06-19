@@ -63,6 +63,14 @@ body {
     color: #f6b319;
     border-radius: 15px;
 }
+/* T-Fix: Right active color */
+#nav-list.navbar-nav > .active > a,
+#nav-list.navbar-nav > .active > a:focus {
+    background: #61122f;
+    color: #f6b319;
+    border-radius: 15px;   
+}
+
 #nav-list a span {
     font-size: 1.8em;
 }
@@ -193,6 +201,52 @@ body {
 }
 /* END MENU CATEGORIES PAGE */
 
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+    margin-bottom: 25px;
+}
+.menu-item-tile hr {
+    width: 80%;
+}
+.menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+    font-size: .6em;
+}
+.menu-item-photo {
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu-item-description {
+    padding-right: 30px;
+}
+h3.menu-item-title {
+    margin:  0 0 10px;
+}
+.menu-item-details {
+    font-size: .9em;
+    font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
 /***************** LARGE DEVICES ONLY *****************/
 @media (min-width: 1200px) {
     /* Home Page */
@@ -302,6 +356,19 @@ body {
         margin: 0 auto 15px;
     }
     /* End Home Page */
+
+    /* Single Category Page */
+    .menu-item-photo {
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price {
+        text-align: center;
+        margin-bottom: 10px; /* T-FIX - Make some space*/
+    }
+    .menu-item-description {
+        text-align: center;
+    }
+    /* End Single Category Page */
 }
 
 /***************** FOR SUPER XTRA SMALL DEVICES ONLY (iPhone 4) *****************/
@@ -317,4 +384,16 @@ body {
         width: 280px;
         margin: 0 auto 15px;
     }
+    /* End Home Page */
+
+    /* Menu Categories Page */
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+    /* End Menu Categories Page */
 }
